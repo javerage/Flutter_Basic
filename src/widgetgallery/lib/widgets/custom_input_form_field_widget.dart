@@ -11,6 +11,8 @@ class CustomInputFormFieldWidget extends StatelessWidget {
   final IconData? icon;
   final IconData? prefixIcon;
   final IconData? suffixIcon;
+  final String propertyName;
+  final Map<String, String> formValues;
 
   const CustomInputFormFieldWidget({
     Key? key,
@@ -24,6 +26,8 @@ class CustomInputFormFieldWidget extends StatelessWidget {
     this.icon,
     this.prefixIcon,
     this.suffixIcon,
+    required this.propertyName,
+    required this.formValues,
   }) : super(key: key);
 
   String? validateName(String? firstName) {
@@ -37,6 +41,7 @@ class CustomInputFormFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      initialValue: formValues[propertyName],
       autofocus: autofocus,
       textCapitalization:
           !obscureText ? TextCapitalization.words : TextCapitalization.none,
@@ -52,6 +57,7 @@ class CustomInputFormFieldWidget extends StatelessWidget {
           icon: icon != null ? Icon(icon) : null),
       validator: (value) => validateName(value),
       autovalidateMode: AutovalidateMode.onUserInteraction,
+      onChanged: (value) => formValues[propertyName] = value,
     );
   }
 }

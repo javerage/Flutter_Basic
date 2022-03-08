@@ -29,6 +29,7 @@ class AppTheme {
           iconColor: primaryColor,
           prefixIconColor: primaryColor,
           suffixIconColor: primaryColor,
+          focusColor: primaryColor,
           border: OutlineInputBorder(
               borderRadius: BorderRadius.only(
                   bottomLeft: Radius.circular(10),
