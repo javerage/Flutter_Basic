@@ -29,7 +29,17 @@ class AppRoute {
         label: 'Card Screen',
         route: 'card',
         icon: Icons.margin,
-        screen: const CardScreen())
+        screen: const CardScreen()),
+    ItemMenu(
+        label: 'Alert Screen',
+        route: 'alert',
+        icon: Icons.warning,
+        screen: const AlertScreen()),
+    ItemMenu(
+        label: 'Inputs Screen',
+        route: 'input',
+        icon: Icons.input,
+        screen: const InputsScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getRoutes() {
