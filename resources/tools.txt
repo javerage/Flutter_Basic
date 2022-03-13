@@ -1,0 +1,5 @@
+Generar Models
+quicktype.io
+
+Api's Dummy
+https://www.mockaroo.com/

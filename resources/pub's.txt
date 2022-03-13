@@ -1,0 +1,15 @@
+- Icon Launcher
+flutter_launcher_icons
+https://pub.dev/packages/flutter_launcher_icons
+
+- Managed permisions
+permission_handler
+https://pub.dev/packages/permission_handler
+
+- http request
+http 
+https://pub.dev/packages/http
+
+- manage state
+provider
+https://pub.dev/packages/provider

@@ -1,0 +1,5 @@
+Android
+https://developer.android.com/reference/android/Manifest.permission
+
+IOS
+https://developer.apple.com/documentation/bundleresources/information_property_list/protected_resources

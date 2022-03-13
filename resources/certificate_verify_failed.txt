@@ -1,0 +1,11 @@
+class MyHttpOverrides extends HttpOverrides{
+  @override
+  HttpClient createHttpClient(SecurityContext? context) => 
+     super.createHttpClient(context)
+      ..badCertificateCallback = (X509Certificate cert, String host, int port) => true;
+  
+}
+
+https://fluttercorner.com/certificate-verify-failed-unable-to-get-local-issuer-certificate-in-flutter/
+
+https://flutteragency.com/solve-flutter-certificate_verify_failed-error-while-performing-a-post-request/
