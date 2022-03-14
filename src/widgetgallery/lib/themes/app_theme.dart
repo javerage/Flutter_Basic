@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  static const int _hexColor = 0XFF117A65;
+  //static const int _hexColor = 0XFF117A65;
   static const double globalElevation = 0;
   static const Color primaryColor = Color.fromARGB(255, 115, 235, 211);
 

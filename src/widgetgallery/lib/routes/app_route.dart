@@ -40,6 +40,16 @@ class AppRoute {
         route: 'input',
         icon: Icons.input,
         screen: const InputsScreen()),
+    ItemMenu(
+        label: 'ListView Separated',
+        route: 'lvseparated',
+        icon: Icons.list_outlined,
+        screen: const ListViewSeparatedScreen()),
+    ItemMenu(
+        label: 'More Inputs Screen',
+        route: 'oinput',
+        icon: Icons.input_sharp,
+        screen: const OtherInputsScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getRoutes() {

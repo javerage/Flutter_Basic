@@ -5,3 +5,5 @@ export 'package:widgetgallery/screens/home_screen.dart';
 export 'package:widgetgallery/screens/gridview_screen.dart';
 export 'package:widgetgallery/screens/alert_screen.dart';
 export 'package:widgetgallery/screens/inputs_screens.dart';
+export 'package:widgetgallery/screens/other_inputs.dart';
+export 'package:widgetgallery/screens/listview_separated_screen.dart';

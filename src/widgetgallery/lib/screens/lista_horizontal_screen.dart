@@ -4,16 +4,76 @@ import 'package:widgetgallery/themes/app_theme.dart';
 
 class ListaHorizontalScreen extends StatelessWidget {
   static final students = <Student>{
-    Student(firstName: 'Maria', lastName: 'Gonzalez', city: 'Oslo'),
-    Student(firstName: 'Sandra', lastName: 'Ochoa', city: 'Paris'),
-    Student(firstName: 'Carolina', lastName: 'Suarez', city: 'Zaragoza'),
-    Student(firstName: 'Monica', lastName: 'Abud', city: 'Montecarlo'),
-    Student(firstName: 'Jair', lastName: 'Canul', city: 'Roma'),
-    Student(firstName: 'Julio', lastName: 'Ortega', city: 'vancouver'),
-    Student(firstName: 'Alejandro', lastName: 'Trujeque', city: 'Guadalajara'),
-    Student(firstName: 'Esteban', lastName: 'Balam', city: 'Monterrey'),
-    Student(firstName: 'Patricia', lastName: 'Ak', city: 'San Francisco'),
-    Student(firstName: 'Lucia', lastName: 'Solis', city: 'New York'),
+    Student(
+        firstName: 'Maria',
+        lastName: 'Gonzalez',
+        city: 'Oslo',
+        email: '',
+        language: '',
+        phone: ''),
+    Student(
+        firstName: 'Sandra',
+        lastName: 'Ochoa',
+        city: 'Paris',
+        email: '',
+        language: '',
+        phone: ''),
+    Student(
+        firstName: 'Carolina',
+        lastName: 'Suarez',
+        city: 'Zaragoza',
+        email: '',
+        language: '',
+        phone: ''),
+    Student(
+        firstName: 'Monica',
+        lastName: 'Abud',
+        city: 'Montecarlo',
+        email: '',
+        language: '',
+        phone: ''),
+    Student(
+        firstName: 'Jair',
+        lastName: 'Canul',
+        city: 'Roma',
+        email: '',
+        language: '',
+        phone: ''),
+    Student(
+        firstName: 'Julio',
+        lastName: 'Ortega',
+        city: 'vancouver',
+        email: '',
+        language: '',
+        phone: ''),
+    Student(
+        firstName: 'Alejandro',
+        lastName: 'Trujeque',
+        city: 'Guadalajara',
+        email: '',
+        language: '',
+        phone: ''),
+    Student(
+        firstName: 'Esteban',
+        lastName: 'Balam',
+        city: 'Monterrey',
+        email: '',
+        language: '',
+        phone: ''),
+    Student(
+        firstName: 'Patricia',
+        lastName: 'Ak',
+        city: 'San Francisco',
+        email: '',
+        language: '',
+        phone: ''),
+    Student(
+        firstName: 'Lucia',
+        lastName: 'Solis',
+        city: 'New York',
+        email: '',
+        language: '',
+        phone: ''),
   };
 
   const ListaHorizontalScreen({Key? key}) : super(key: key);
