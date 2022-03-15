@@ -27,6 +27,17 @@ class InputsScreen extends StatelessWidget {
       'language': ''
     };
 
+    final List<String> languages = [
+      'CSharp',
+      'Java',
+      'Python',
+      'Kotlin',
+      'Go',
+      'Javascript',
+      'Haskell',
+      'Other',
+    ];
+
     return Scaffold(
         appBar: AppBar(title: Text('Inputs Screen')),
         body: SingleChildScrollView(
@@ -40,7 +51,8 @@ class InputsScreen extends StatelessWidget {
                       hintText: 'First Name',
                       labelText: 'First Name',
                       propertyName: 'firstName',
-                      formValues: initialObject),
+                      formValues: initialObject,
+                      autofocus: true),
                   SizedBox(
                     height: 10,
                   ),
@@ -82,23 +94,13 @@ class InputsScreen extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  DropdownButtonFormField<String>(
-                      items: const [
-                        DropdownMenuItem(
-                            value: 'csharp', child: Text('CSharp')),
-                        DropdownMenuItem(
-                            value: 'kotlin', child: Text('Kotlin')),
-                        DropdownMenuItem(value: 'dart', child: Text('Dart')),
-                        DropdownMenuItem(value: 'golang', child: Text('Go')),
-                        DropdownMenuItem(
-                            value: 'python', child: Text('Python')),
-                        DropdownMenuItem(
-                            value: 'javascript', child: Text('Javascript')),
-                        DropdownMenuItem(value: 'other', child: Text('Otros')),
-                      ],
-                      onChanged: (value) {
-                        initialObject['language'] = value ?? 'other';
-                      }),
+                  CustomDropDownWidget(
+                      languages: languages,
+                      initialObject: initialObject,
+                      propertyName: 'language',
+                      labelText: 'Language',
+                      hintText: 'Select One...',
+                      formValues: initialObject),
                   SizedBox(
                     height: 10,
                   ),

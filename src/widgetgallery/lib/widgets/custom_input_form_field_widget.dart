@@ -21,7 +21,7 @@ class CustomInputFormFieldWidget extends StatelessWidget {
     this.labelText,
     this.maxLength = 50,
     this.obscureText = false,
-    this.autofocus = true,
+    this.autofocus = false,
     this.keyboardType = TextInputType.name,
     this.icon,
     this.prefixIcon,
