@@ -3,3 +3,19 @@ quicktype.io
 
 Api's Dummy
 https://www.mockaroo.com/
+
+request
+GET
+https://my.api.mockaroo.com/dummy_dmp.json?key=9a54fc40
+
+POST
+https://my.api.mockaroo.com/dummy_dmp.json?key=9a54fc40&__method=POST
+
+{
+    "firstName":"Joel", 
+    "lastName":"Chuc",
+    "phone":"999999999",
+    "email":"correo@correo.com",
+    "password":"1234567890",
+    "language":"csharp"
+}
