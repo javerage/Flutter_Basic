@@ -7,38 +7,39 @@ class ContainerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              RectangleContainer(
-                child: Text(
-                  'Hello Nurse\n:P',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.redAccent,
-                    fontSize: 32,
-                  ),
+      appBar: AppBar(
+        title: Text('Container Screen'),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            RectangleContainer(
+              child: Text(
+                'Hello Nurse\n:P',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.redAccent,
+                  fontSize: 32,
                 ),
-                height: 200,
-                width: 200,
               ),
-              CircleContainer(
-                child: Text(
-                  'Hello Nurse\n:P',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.purpleAccent,
-                    fontSize: 32,
-                  ),
+              height: 200,
+              width: 200,
+            ),
+            CircleContainer(
+              child: Text(
+                'Hello Nurse\n:P',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.purpleAccent,
+                  fontSize: 32,
                 ),
-                height: 200,
-                width: 200,
               ),
-            ],
-          ),
+              height: 200,
+              width: 200,
+            ),
+          ],
         ),
       ),
     );
