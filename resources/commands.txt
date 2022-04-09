@@ -1,0 +1,8 @@
+crear un nuevo proyecto simple
+flutter create <<nombre_proyecto>>
+
+crear un nuevo proyecto custom
+flutter create -i swift -a kotlin --androidx --org <<dominio.organizacion>> <<nombre_proyecto>>
+
+descargar los paquetes asociados al código
+flutter pub get
