@@ -50,6 +50,16 @@ class AppRoute {
         route: 'oinput',
         icon: Icons.input_sharp,
         screen: const OtherInputsScreen()),
+    ItemMenu(
+        label: 'Text Screen',
+        route: 'text',
+        icon: Icons.text_fields,
+        screen: const TextScreen()),
+    ItemMenu(
+        label: 'Container Screen',
+        route: 'container',
+        icon: Icons.markunread,
+        screen: const ContainerScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getRoutes() {
